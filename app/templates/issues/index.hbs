@@ -1,3 +1,5 @@
+<button {{action 'createIssue'}}>Create an issue</button>
+
 {{#each}}
   <ul>
     <li>{{#link-to 'issues.show' this}}{{title}}{{/link-to}}</li>

@@ -1,3 +1,5 @@
-<label>Title</label>
-{{input value=title type='text'}}
-<button {{action 'save'}}>Save</button>
+<form {{action "save" on="submit"}}>
+  <label>Title</label>
+  {{input value=title type='text'}}
+  <button type="submit">Save</button>
+</form>

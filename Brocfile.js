@@ -16,6 +16,8 @@ var app = new EmberApp();
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
-app.import('vendor/ember-localstorage-adapter/localstorage_adapter.js');
+// app.import('vendor/ember-localstorage-adapter/localstorage_adapter.js');
+app.import('vendor/firebase/firebase.js');
+app.import('vendor/emberfire/dist/emberfire.js');
 
 module.exports = app.toTree();

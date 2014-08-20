@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       var hasUnsavedChanges = this.controller.get('hasUnsavedChanges');
       if (hasUnsavedChanges) {
         if (!confirm('Really!?!?!')) {
-          transition.abort()
+          transition.abort();
         }
       }
     }

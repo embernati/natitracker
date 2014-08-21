@@ -1,10 +1,11 @@
 import startApp from '../helpers/start-app';
+import Ember from 'ember';
 
 var App;
 
 module('Create new issue', {
   setup: function() {
-    localStorage.clear();
+    window.localStorage.clear();
     App = startApp();
   },
   teardown: function() {

@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
         .save()
         .then(function () {
           this.set('title', null);
-          this.transitionTo('issues');          
+          this.transitionToRoute('issues');
         }.bind(this));
     }
   },
